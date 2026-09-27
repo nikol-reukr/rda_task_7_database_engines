@@ -21,13 +21,13 @@ CREATE TABLE ProductDescription (
     CountryID INT,
     ProductID INT,
     Description TEXT
-) ENGINE=InnoDB;
+) ENGINE=MyISAM;
 
 -- Create a table for storing logs
 CREATE TABLE Logs (
     ID INT,
-    Time DATETIME,
-    LogRecord VARCHAR(255)
+    Timestamp DATETIME,
+    Message VARCHAR(255)
 ) ENGINE=BLACKHOLE;
 
 -- Create a table for storing reporting data
